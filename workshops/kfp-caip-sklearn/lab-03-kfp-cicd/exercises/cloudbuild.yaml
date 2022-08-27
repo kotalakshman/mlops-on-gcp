@@ -1,7 +1,7 @@
 steps:
 # Build the trainer image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/$_TRAINER_IMAGE_NAME:$TAG_NAME', '.']
+  args: ['build','-t','gcr.io/test-servers-349208/trainer_image:test','.']
   dir: $_PIPELINE_FOLDER/trainer_image
   
 # Build the base image for lightweight components
